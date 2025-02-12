@@ -42,7 +42,7 @@ const Cart = () => {
       const jettonWallet = tonClient.open(JettonWallet.createFromAddress(usersUsdtAddress));
 
       await jettonWallet.sendTransfer(sender, {
-        fwdAmount: 60000000n,
+        fwdAmount: 20000000n,
         comment: orderId,
         jettonAmount: calculateUsdtAmount(totalCost * 100),
         toAddress: INVOICE_WALLET_ADDRESS,
