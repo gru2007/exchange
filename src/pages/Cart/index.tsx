@@ -43,7 +43,7 @@ const Cart = () => {
 
       await jettonWallet.sendTransfer(sender, {
         fwdAmount: 100000000n,
-        comment: orderId,
+        //comment: orderId,
         jettonAmount: calculateUsdtAmount(totalCost * 100),
         toAddress: INVOICE_WALLET_ADDRESS,
         value: JETTON_TRANSFER_GAS_FEES,
